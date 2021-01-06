@@ -3,10 +3,11 @@
 
 #include "iimposto.h"
 
-class Ipi : public IImposto
+class IPI : public IImposto
 {
+    // IImposto interface
 public:
-    virtual float calcular() override;
+    virtual float calcular() override {return 10;};
 };
 
 #endif // IPI_H

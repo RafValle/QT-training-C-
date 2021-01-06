@@ -4,24 +4,44 @@
 
 using namespace std;
 
-Compra::Compra()
+Compra::Compra(int id, string nome)
+    : _id(id), _nome(nome)
 {
-    cout << "CCT2" << endl;
+    cout << "Regular constructor\n";
 }
 
-Compra::Compra(const Compra &compra)
-    : _idCliente(compra._idCliente), _nome(compra._nome)
-{
-    cout << "Executar copy contructor" << endl;
+Compra::Compra(const Compra &c)
+    : _id(c._id), _nome(c._nome){
+    cout << "Copy constructor\n";
 }
 
-Compra &Compra::operator =(Compra &&compra)
+Compra::Compra(Compra &&c)
+    : _id(c._id), _nome(c._nome)
 {
-    _idCliente = compra._idCliente;
+    cout << "Move constructor\n";
+    c._id = 0;
+    c._nome = "";
+}
+
+Compra &Compra::operator=(const Compra &compra)
+{
+    cout << "Copy assignment\n" << endl;
+    _id = compra._id;
     _nome = compra._nome;
-    cout << "CA" << endl;
-
     return *this;
 }
 
+Compra &Compra::operator=(Compra &&compra)
+{
+    cout << "Move assignment\n" << endl;
+    _id = compra._id;
+    _nome = compra._nome;
+    compra._id = 0;
+    compra._nome = "";
+    return *this;
+}
 
+Compra::~Compra()
+{
+    cout << "Destructor\n";
+}

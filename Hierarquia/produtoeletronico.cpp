@@ -3,15 +3,14 @@
 #include <iostream>
 using namespace std;
 
-#include "iimposto.h"
-
 ProdutoEletronico::ProdutoEletronico(const shared_ptr<IImposto> &imposto)
-     : IProduto(imposto)
+    : IProduto(imposto) //Construtor da classe pai
 {
+
 }
 
 void ProdutoEletronico::devolver()
 {
-    cout << "Devolver produto eletronico" << endl;
-    cout << "O Valor do imposto foi" << _imposto->calcular() << endl;
+    cout << "Devolvendo produto eletronico" << endl;
+    cout << "O valor do imposto foi " << _imposto->calcular() << endl;
 }

@@ -1,11 +1,10 @@
 #ifndef IPRODUTO_H
 #define IPRODUTO_H
-#include <memory>
 
+#include <memory>
 using namespace std;
 
 class IImposto;
-
 class IProduto
 {
 public:
@@ -16,7 +15,6 @@ public:
 
 protected:
     shared_ptr<IImposto> _imposto;
-//    IImposto *_imposto =  nullptr;
 };
 
 #endif // IPRODUTO_H

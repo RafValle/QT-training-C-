@@ -2,22 +2,20 @@
 #define COMPRA_H
 
 #include <string>
-#include <vector>
 
 using namespace std;
 
 class Compra
 {
 public:
-    Compra();
-    Compra(unsigned idCliente, string nome);
-    Compra(const Compra &compra);
-    Compra(Compra &&compra);
-    Compra &operator =(const Compra &compra);
-    Compra &operator =(Compra &&compra);
-
+    Compra(int id = 0, string nome = "");
+    Compra(const Compra &c);;
+    Compra(Compra &&c);
+    Compra &operator=(const Compra &compra);
+    Compra &operator=(Compra &&compra);
+    ~Compra();
 private:
-    unsigned _idCliente;
+    int _id;
     string _nome;
 };
 
