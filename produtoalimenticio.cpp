@@ -4,7 +4,7 @@ using namespace std;
 
 #include "iimposto.h"
 
-ProdutoAlimenticio::ProdutoAlimenticio(IImposto *imposto)
+ProdutoAlimenticio::ProdutoAlimenticio(const shared_ptr<IImposto> &imposto)
     :IProduto(imposto)
 {
 }

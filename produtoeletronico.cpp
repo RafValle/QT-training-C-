@@ -5,7 +5,7 @@ using namespace std;
 
 #include "iimposto.h"
 
-ProdutoEletronico::ProdutoEletronico(IImposto *imposto)
+ProdutoEletronico::ProdutoEletronico(const shared_ptr<IImposto> &imposto)
      : IProduto(imposto)
 {
 }
