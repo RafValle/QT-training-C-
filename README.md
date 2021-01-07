@@ -1,2 +1,2 @@
-# QT-training-C-
+# QT-training-C++
 Treinamento de C++ 
