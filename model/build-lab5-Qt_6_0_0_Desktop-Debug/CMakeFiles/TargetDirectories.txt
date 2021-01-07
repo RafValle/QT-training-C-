@@ -1,4 +1,0 @@
-/home/qmob/Downloads/Treinamento C++/aula4/build-lab5-Qt_6_0_0_Desktop-Debug/CMakeFiles/rebuild_cache.dir
-/home/qmob/Downloads/Treinamento C++/aula4/build-lab5-Qt_6_0_0_Desktop-Debug/CMakeFiles/edit_cache.dir
-/home/qmob/Downloads/Treinamento C++/aula4/build-lab5-Qt_6_0_0_Desktop-Debug/CMakeFiles/lab5.dir
-/home/qmob/Downloads/Treinamento C++/aula4/build-lab5-Qt_6_0_0_Desktop-Debug/CMakeFiles/lab5_autogen.dir
